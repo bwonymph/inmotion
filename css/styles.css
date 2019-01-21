@@ -113,8 +113,27 @@ h6 {
   background-color: #fafafa;
   height: 100vh;
 }
+.portfolio{
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-image: url("../img/portfolio_bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 
-
+.quote{
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #fafafa;
+  height: 60vh;
+}
 /* Side Menu */
 #sidebar-wrapper {
   position: fixed;
@@ -377,8 +396,14 @@ a:hover, a:focus, a:active {
 }
 
 
-.quote{
-  float: right;
-  color: gray;
 
+ol { 
+    counter-reset: item;
+    list-style-type: none;
 }
+li { display: block; }
+li:before { 
+    content: counter(item, decimal-leading-zero) " "; 
+    counter-increment: item;
+}
+
