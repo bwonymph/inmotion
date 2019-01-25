@@ -131,8 +131,18 @@ h6 {
   display: table;
   margin: 0;
   max-width: none;
+  background-color: white;
+  height: 70vh;
+}
+
+.testimonies{
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
   background-color: #fafafa;
-  height: 60vh;
+  height: 100vh;
 }
 /* Side Menu */
 #sidebar-wrapper {
@@ -486,5 +496,17 @@ li:before {
     grid-row-end: span 6;
 }
 
+.dinosaurs {
+  list-style-position: inside;
+}
 
+.dinosaurs li{
+  position: relative;
+  font-size: 100%; 
+  margin: 5% 0;
+}
+.dinosaurs li a {
+  position: absolute;
+  left: 60px;
+}
 /*Testing end*/
