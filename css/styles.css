@@ -407,3 +407,81 @@ li:before {
     counter-increment: item;
 }
 
+
+
+/*Masonry CSS*/
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(60px, auto);
+    grid-auto-flow: dense;
+}
+
+.grid-layout-clear {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(60px, auto);
+    grid-auto-flow: dense;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #929796;
+    background-color: #333;
+    &:nth-child(odd) {
+        background-color: #424242;
+    }
+}
+
+.grid-item-clear{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #929796;
+    background-color: white;
+    &:nth-child(odd) {
+        background-color: #424242;
+    }
+}
+
+.span-2 {
+    grid-column-end: span 2;
+    grid-row-end: span 6;
+}
+
+.span-3 {
+    grid-column-end: span 2;
+    grid-row-end: span 4;
+}
+
+.span-4 {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+
+.span-5 {
+    grid-column-end: span 2;
+    grid-row-end: span 5;
+}
+
+.span-6 {
+    grid-column-end: span 4;
+    grid-row-end: span 2;
+}
+
+.span-7 {
+    grid-column-end: span 2;
+    grid-row-end: span 3;
+}
+
+.span-8 {
+    grid-column-end: span 6;
+    grid-row-end: span 6;
+}
