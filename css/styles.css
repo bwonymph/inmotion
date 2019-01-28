@@ -516,6 +516,14 @@ li:before {
         height: 0px;
 
 }
+.dash2{
+        border: 1px solid #ff3c00;
+        width: 15vw;
+        height: 0px;
+        margin-left: 3vw;
+        margin-right: 3vw;
+
+}
 /*Testing end*/
 
 
@@ -529,3 +537,31 @@ li:before {
   background-color: #ff3c00;
   color: white;
 }
+
+/*home page shit*/
+
+.vertical-text {
+  transform: rotate(270deg);
+  transform-origin: left top 0;
+  margin-left: -6vw;
+  margin-top: 30vh;
+}
+
+.rownav{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -6vw;
+}
+
+.btn-ask {
+  padding: 1rem 1rem;
+}
+
+.portrow {
+  display: flex;  /* make the row a flex container */
+  align-items: center; /* vertically center each flex item in the container */
+}
+

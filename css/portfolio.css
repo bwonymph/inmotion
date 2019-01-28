@@ -1,0 +1,44 @@
+/*portfolio.css*/
+
+/*For portfolio page and positioning*/
+
+
+.prow {
+  margin: 8px 10px;
+}
+
+/* Add padding BETWEEN each column */
+.prow,
+.prow > .pcolumn {
+  padding: 8px;
+}
+
+.pcolumn {
+  float: left;
+  width: 30%;
+}
+
+/* Clear floats after rows */ 
+.prow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1600px) {
+  .pcolumn {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pcolumn {
+    width: 100%;
+  }
+}
