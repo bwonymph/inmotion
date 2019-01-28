@@ -509,4 +509,23 @@ li:before {
   position: absolute;
   left: 60px;
 }
+
+.dash{
+        border: 1px solid black;
+        width: 30vw;
+        height: 0px;
+
+}
 /*Testing end*/
+
+
+/* BTN Stuff */
+.ask {
+  border-color: #ff3c00;
+  color: #ff3c00;
+}
+
+.ask:hover {
+  background-color: #ff3c00;
+  color: white;
+}
