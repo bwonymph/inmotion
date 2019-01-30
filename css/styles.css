@@ -104,6 +104,8 @@ h6 {
   }
 }
 
+/*Sections*/
+
 .services{
   width: 100%;
   padding: 0 7%;
@@ -144,6 +146,48 @@ h6 {
   background-color: #fafafa;
   height: 100vh;
 }
+
+.team-text{
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: white;
+  height: 70vh;
+  color:#b6b6b6;
+}
+
+.team{
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: white;
+  height: 100vh;
+}
+
+.service-white{
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: white;
+  height: 100vh;
+}
+
+.service-gray{
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #fafafa;
+  height: 100vh;
+}
+
 /* Side Menu */
 #sidebar-wrapper {
   position: fixed;
@@ -333,6 +377,8 @@ h6 {
 footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  height:65vh;
+  background-color: white;
 }
 
 footer.footer .social-link {
@@ -565,3 +611,6 @@ li:before {
   align-items: center; /* vertically center each flex item in the container */
 }
 
+.filter-grey{
+    filter: invert(50%) ;
+}
