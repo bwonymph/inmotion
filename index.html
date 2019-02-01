@@ -96,7 +96,7 @@
         <div class ="container" style="margin-top:3vh">
           <h1 class="mb-1" style="font-size:3vw">Portfolio</h1>
         </div>
-        <div class = "container" style="margin-top:5xvh; margin-left:1vw;">
+        <div class = "container" style="margin-top:5vh; padding-bottom:3vh;">
           <div class="grid-layout-clear">
             <div class="grid-item-clear span-8 grid-item-1">
               <div class="grid-layout">
@@ -122,12 +122,12 @@
 
       <section class ="testimonies">
         <div style="position:relative;">
-          <img src="img/portfolio_bg.png" style=" margin-left:7vw; margin-top:10vh;height:600px; width:600px; position:absolute;">
-          <div class="container justify-content-center" style=" margin-left:42vw; margin-top:20vh; height:600px; width:600px; position:absolute; background-color:white;">
+          <img src="img/songsbury.jpg" id="image"class="testimg">
+          <div class="container justify-content-center testbox">
             <div class="container" style="margin-top:15vh;">
-              <h4 style="line-height: 5vh; text-align:justify;"><em>“I’ve been working with InMotion over the past 6 months on creating and selling an online music course and I have to say that Timothy and Daniel are two of the most hardworking and talented people I know. They bring a level of expertise and professionalism that is unmatched in the industry. I can’t recommend them and InMotion enough!!”</em></h4>
-              <h1 style="margin-left:20vw;">-Mat Teofilo</h1>
-              <h3 style="margin-left:25vw;" >Songsbury</h3>
+              <h4 id="text-test" style="line-height: 5vh; text-align:justify; font-style:italic;"><em>“I’ve been working with InMotion over the past 6 months on creating and selling an online music course and I have to say that Timothy and Daniel are two of the most hardworking and talented people I know. They bring a level of expertise and professionalism that is unmatched in the industry. I can’t recommend them and InMotion enough!!”</em></h4>
+              <h1 id="title" style="margin-left:20vw;">-Mat Teofilo</h1>
+              <h3 id="position" style="margin-left:25vw;" >Songsbury</h3>
             </div>
           </div>
       </div>
@@ -172,6 +172,34 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Other JS -->
     <script src="js/scripts.js"></script>
+
+    <script>
+            var image = document.getElementById("image");
+            var currentPos = 0;
+            var images = ["img/songsbury.jpg", "img/airlitix.jpg"]
+
+            var text = document.getElementById("text-test");
+            var testimonies = ["“I’ve been working with InMotion over the past 6 months on creating and selling an online music course and I have to say that Timothy and Daniel are two of the most hardworking and talented people I know. They bring a level of expertise and professionalism that is unmatched in the industry. I can’t recommend them and InMotion enough!!”", "“We worked closely with the InMotion team to execute our funnel strategy and implement ad campaigns focused on the indoor farming market. Their creative marketing boosted our products visibility by 437% which resulted in many customer acquisitions.”"]
+
+            var title = document.getElementById("title");
+            var titles = ["-Mat Teofilo", "-Edward Nehamkin"]
+
+            var position = document.getElementById("position");
+            var positions =["Songsbury","Product Manager, Airlitix"]
+
+
+            function volgendefoto() {
+                if (++currentPos >= images.length)
+                    currentPos = 0;
+
+                image.src = images[currentPos];
+                text.textContent = testimonies[currentPos];
+                title.textContent = titles[currentPos];
+                position.textContent=positions[currentPos];
+
+            }
+
+            setInterval(volgendefoto, 10000);</script>
 
   </body>
 

@@ -496,7 +496,6 @@ li:before {
     grid-gap: 10px;
     grid-auto-rows: minmax(60px, auto);
     grid-auto-flow: dense;
-    padding: 10px;
 }
 
 .grid-item {
@@ -669,6 +668,45 @@ li:before {
 */  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: -6vw;
+  }
+}
+
+/*Testimony*/
+
+.testimg{
+  margin-left:7vw;
+  margin-top:10vh;
+  height:600px; 
+  width:600px; 
+  position:absolute;
+}
+
+.testbox{
+  margin-left:42vw; 
+  margin-top:20vh; 
+  height:600px; 
+  width:600px; 
+  position:absolute; 
+  background-color:white;
+}
+
+
+@media (min-width: 768px) {
+  .testimg{
+    margin-left:7vw;
+    margin-top:10vh;
+    height:600px; 
+    width:600px; 
+    position:absolute;
+  }
+
+  .testbox{
+     margin-left:42vw; 
+     margin-top:20vh; 
+     height:600px; 
+     width:600px; 
+     position:absolute; 
+     background-color:white;
   }
 }
 
