@@ -153,8 +153,8 @@ h6 {
 
 .headlogo{
   max-width: 40px; 
+  margin-top:10px;
   /*  max-height: 40px;*/
-  padding-left:-15vw;
 }
 
 @media (min-width: 768px) {
@@ -167,7 +167,8 @@ h6 {
   .headlogo{
   max-width: 70px; 
   max-height:70px;
-  padding-left:-15vw;
+  margin-left:-80px;
+  margin-top: 5px;
   }
 }
 
@@ -765,16 +766,16 @@ li:before {
 .btn-ask {
   padding: .2rem 1rem;
   font-size: .5rem;
-  margin-top: 2vh;
-  margin-left: 50vw;
+  float:right;
+  margin-top: 15px;
 }
 
 @media (min-width: 768px) {
   .btn-ask {
   padding: .8rem 3rem;
   font-size: 1rem;
-  margin-left:70vw; 
-  margin-top: 2vh;
+  float:right;
+  margin-top: 15px;
   }
 }
 .portrow {
@@ -790,4 +791,11 @@ li:before {
     position: relative;
     transform: translatey(-50%);
     top: 50%;
+}
+
+.navbot{
+  color:black;
+}
+.navbot:hover {
+  color: #ff3c00;;
 }
