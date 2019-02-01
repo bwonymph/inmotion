@@ -95,7 +95,7 @@ h6 {
 }
 
 .head h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0;
   padding: 0;
 }
@@ -523,40 +523,78 @@ li:before {
 }
 
 .span-2 {
-    grid-column-end: span 2;
-    grid-row-end: span 6;
+    grid-column-end: span 3;
+    grid-row-end: span 3;
 }
 
 .span-3 {
-    grid-column-end: span 2;
-    grid-row-end: span 4;
+    grid-column-end: span 3;
+    grid-row-end: span 3;
 }
 
 .span-4 {
-    grid-column-end: span 2;
-    grid-row-end: span 2;
+    grid-column-end: span 3;
+    grid-row-end: span 3;
 }
 
 .span-5 {
-    grid-column-end: span 2;
-    grid-row-end: span 5;
+    grid-column-end: span 3;
+    grid-row-end: span 3;
 }
 
 .span-6 {
-    grid-column-end: span 4;
-    grid-row-end: span 2;
+    grid-column-end: span 3;
+    grid-row-end: span 3;
 }
 
 .span-7 {
-    grid-column-end: span 2;
+    grid-column-end: span 3;
     grid-row-end: span 3;
 }
 
 .span-8 {
-    grid-column-end: span 6;
-    grid-row-end: span 6;
+    grid-column-end: span 3;
+    grid-row-end: span 3;
 }
 
+@media (min-width: 768px) {
+  .span-2 {
+    grid-column-end: span 2;
+    grid-row-end: span 6;
+  }
+
+  .span-3 {
+      grid-column-end: span 2;
+      grid-row-end: span 4;
+  }
+
+  .span-4 {
+      grid-column-end: span 2;
+      grid-row-end: span 2;
+  }
+
+  .span-5 {
+      grid-column-end: span 2;
+      grid-row-end: span 5;
+  }
+
+  .span-6 {
+      grid-column-end: span 4;
+      grid-row-end: span 2;
+  }
+
+  .span-7 {
+      grid-column-end: span 2;
+      grid-row-end: span 3;
+  }
+
+  .span-8 {
+      grid-column-end: span 6;
+      grid-row-end: span 6;
+  }
+}
+
+/*MISC*/
 .dinosaurs {
   list-style-position: inside;
 }
@@ -607,10 +645,11 @@ li:before {
 /*home page shit*/
 
 .vertical-text {
+  position: absolute;
   transform: rotate(270deg);
   transform-origin: left top 0;
   margin-left: -6vw;
-  margin-top: 30vh;
+  margin-top: 70vh;
 }
 
 .rownav{
