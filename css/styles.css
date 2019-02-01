@@ -82,6 +82,57 @@ h6 {
   font-weight: 800;
 }
 
+.menu-scroll {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 45px;
+  font-size: 30px;
+}
+
+.menu-scroll:focus, .menu-scroll:hover {
+  color: white;
+}
+
+.menu-scroll:hover {
+  background: #343a40;
+}
+
+.menu-scroll i {
+  font-weight: 900;
+}
+
+.menu-mid-scroll {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  color: white;
+  background: none;
+  line-height: 45px;
+  font-size: 30px;
+}
+
+.menu-mid-scroll:focus, .menu-mid-scroll:hover {
+  color: white;
+}
+
+.menu-mid-scroll:hover {
+  background: #343a40;
+}
+
+.menu-mid-scroll i {
+  font-weight: 900;
+}
+
 /*Sections*/
 
 .head {

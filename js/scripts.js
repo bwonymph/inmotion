@@ -40,6 +40,29 @@
     }
   });
 
+  //More scroll shit
+  $(document).scroll(function() {
+    var scrollDistance = $(this).scrollTop();
+    if (scrollDistance > 100) {
+      $('.menu-scroll').fadeIn();
+    } else {
+      $('.menu-scroll').fadeOut();
+    }
+  });
+
+  $(document).scroll(function() {
+    var scrollDistance = $(this).scrollTop();
+    if (scrollDistance > 100) {
+      $('.menu-mid-scroll').fadeOut();
+      $('.vertical-text').fadeOut();
+
+    } else {
+      $('.menu-mid-scroll').fadeIn();
+      $('.vertical-text').fadeIn();
+    }
+  });
+
+
 })(jQuery); // End of use strict
 
 // Disable Google Maps scrolling
