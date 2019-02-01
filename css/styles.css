@@ -1,3 +1,6 @@
+/*MOBILE FIRST CSS*/
+
+
 body,
 html {
   width: 100%;
@@ -79,6 +82,8 @@ h6 {
   font-weight: 800;
 }
 
+/*Sections*/
+
 .head {
   width: 100%;
   padding: 0 7%;
@@ -90,21 +95,31 @@ h6 {
 }
 
 .head h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   margin: 0;
   padding: 0;
 }
 
-@media (min-width: 992px) {
+.headlogo{
+  max-width: 40px; 
+  max-height:40px;
+  padding-left:-15vw;
+}
+
+@media (min-width: 768px) {
   .head {
     height: 100vh;
   }
   .head h1 {
     font-size: 5.5rem;
   }
+  .headlogo{
+  max-width: 70px; 
+  max-height:70px;
+  padding-left:-15vw;
+  }
 }
 
-/*Sections*/
 
 .services{
   width: 100%;
@@ -575,6 +590,11 @@ li:before {
 
 /* BTN Stuff */
 .ask {
+  border-color: #b3b3b3;
+  color: #b3b3b3;
+}
+
+.ask-quote {
   border-color: #ff3c00;
   color: #ff3c00;
 }
@@ -602,10 +622,33 @@ li:before {
   margin-left: -6vw;
 }
 
-.btn-ask {
-  padding: 1rem 1rem;
+@media (min-width: 768px) {
+  .rownav{
+  display: -webkit-box;
+  display: -ms-flexbox;
+/*  display: flex;
+*/  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -6vw;
+  }
 }
 
+
+.btn-ask {
+  padding: .2rem 1rem;
+  font-size: .5rem;
+  margin-top: 2vh;
+  margin-left: 50vw;
+}
+
+@media (min-width: 768px) {
+  .btn-ask {
+  padding: .8rem 3rem;
+  font-size: 1rem;
+  margin-left:70vw; 
+  margin-top: 2vh;
+  }
+}
 .portrow {
   display: flex;  /* make the row a flex container */
   align-items: center; /* vertically center each flex item in the container */
@@ -613,4 +656,10 @@ li:before {
 
 .filter-grey{
     filter: invert(50%) ;
+}
+
+.v-center {
+    position: relative;
+    transform: translatey(-50%);
+    top: 50%;
 }
