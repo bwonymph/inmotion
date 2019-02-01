@@ -693,6 +693,10 @@ li:before {
   color: white;
 }
 
+.ask-quote:hover {
+  background-color: #ff3c00;
+  color: white;
+}
 /*home page shit*/
 
 .vertical-text {
