@@ -16,6 +16,7 @@
 .pcolumn {
   float: left;
   width: 30%;
+  padding-left: 10px;
 }
 
 /* Clear floats after rows */ 
@@ -29,6 +30,7 @@
 .content {
   background-color: white;
   padding: 10px;
+  opacity:0;
 }
 
 @media screen and (max-width: 1600px) {
@@ -41,4 +43,50 @@
   .pcolumn {
     width: 100%;
   }
+}
+
+/* Animations*/
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes grow-left {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.agent-1, .agent-3, .agent-4.trig, .agent-5.trig {
+  opacity: 0;
+  animation: fade-in-right ease 0.8s forwards;
+}
+
+.agent-2 {
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 1.6s forwards;
+  /*animation-delay: 0s;*/
+}
+
+.agent-3 {
+  animation-delay: 0.8s;
+}
+
+.agent-4.trig {
+  animation-delay: 0.8s;
+}
+
+.agent-5.trig {
+  animation-delay: 0.8s;
 }
