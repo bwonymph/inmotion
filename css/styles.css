@@ -91,7 +91,6 @@ h6 {
   height: 50px;
   text-align: center;
   color: white;
-  background: rgba(52, 58, 64, 0.5);
   line-height: 45px;
   font-size: 30px;
 }
@@ -101,7 +100,7 @@ h6 {
 }
 
 .menu-scroll:hover {
-  background: #343a40;
+  background: gray;
 }
 
 .menu-scroll i {
@@ -172,7 +171,13 @@ h6 {
   }
 }
 
-
+.misc{
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+}
 .services{
   width: 100%;
   padding: 0 7%;
