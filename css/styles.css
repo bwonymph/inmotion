@@ -110,9 +110,9 @@ h6 {
 .menu-mid-scroll {
   position: absolute;
   top: 50%;
-  left: 15px;
-  width: 70px;
-  height: 70px;
+  left: 3vw;
+  width: 50px;
+  height: 50px;
   text-align: center;
   color: white;
   background: none;
@@ -157,9 +157,21 @@ h6 {
   /*  max-height: 40px;*/
 }
 
+.testimonies{
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #fafafa;
+  height: 60vh;
+}
+
 @media (min-width: 768px) {
   .head {
     height: 100vh;
+    padding-left:7%;
+    padding-right: 0%;
   }
   .head h1 {
     font-size: 5.5rem;
@@ -169,6 +181,16 @@ h6 {
   max-height:70px;
   margin-left:-7vw;
   margin-top: 5px;
+  }
+
+  .testimonies{
+    width: 100%;
+    padding: 0 7%;
+    display: table;
+    margin: 0;
+    max-width: none;
+    background-color: #fafafa;
+    height: 100vh;
   }
 }
 
@@ -210,15 +232,6 @@ h6 {
   height: 70vh;
 }
 
-.testimonies{
-  width: 100%;
-  padding: 0 7%;
-  display: table;
-  margin: 0;
-  max-width: none;
-  background-color: #fafafa;
-  height: 100vh;
-}
 
 .team-text{
   width: 100%;
@@ -695,9 +708,10 @@ li:before {
 
 
 /* BTN Stuff */
+}
 .ask {
   border-color: #b3b3b3;
-  color: #b3b3b3;
+  xd
 }
 
 .ask-quote {
@@ -750,21 +764,41 @@ li:before {
 .testimg{
   margin-left:7vw;
   margin-top:10vh;
-  height:600px; 
-  width:600px; 
+  height:200px; 
+  width:200px; 
   position:absolute;
 }
 
 .testbox{
   margin-left:42vw; 
   margin-top:20vh; 
-  height:600px; 
-  width:600px; 
+  height:200px; 
+  width:200px; 
   position:absolute; 
   background-color:white;
 }
 
+.testimg2{
+  height:200px; 
+  width:200px; 
+}
 
+.testtext{
+  margin-top: -11vh;
+  line-height: 1.7vh; 
+  text-align:justify; 
+  font-style:italic;
+  font-size: 1.7vh;
+}
+
+.testtitle{
+  font-size: 1.7vh;
+}
+
+.testpos{
+    font-size: 1.7vh;
+    
+  }
 @media (min-width: 768px) {
   .testimg{
     margin-left:7vw;
@@ -774,6 +808,28 @@ li:before {
     position:absolute;
   }
 
+  .testtext{
+    margin-top: 0vh;
+    line-height: 5vh; 
+    text-align:justify; 
+    font-style:italic;
+    font-size: 3.5vh;
+  }
+
+  .testtitle{
+    font-size: 4vh;
+    margin-left:20vw;
+  }
+  .testpos{
+    font-size: 4vh;
+    margin-left:25vw;
+  }
+
+  .testimg2{
+    height:600px; 
+    width:600px; 
+
+  }
   .testbox{
      margin-left:42vw; 
      margin-top:20vh; 
@@ -790,6 +846,11 @@ li:before {
   font-size: .5rem;
   float:right;
   margin-top: 15px;
+  border-color: #b3b3b3;
+  color: #b3b3b3;
+  border-radius: 0;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 @media (min-width: 768px) {
@@ -798,6 +859,10 @@ li:before {
   font-size: 1rem;
   float:right;
   margin-top: 15px;
+  border-color: #b3b3b3;
+  color: #b3b3b3;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   }
 }
 .portrow {
@@ -820,4 +885,21 @@ li:before {
 }
 .navbot:hover {
   color: #ff3c00;;
+}
+
+.borderline {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background:#ff3c00;
+    opacity:0;
+}
+
+.borderline2 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background:#ff3c00;
 }

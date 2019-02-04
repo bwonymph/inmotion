@@ -42,15 +42,6 @@
   }
 }
 
-.borderline {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 5px;
-    background:#ff3c00;
-    opacity:0;
-
-}
 
 /* Animations*/
 
