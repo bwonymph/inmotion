@@ -153,6 +153,7 @@ h6 {
 .headlogo{
   max-width: 40px; 
   margin-top:10px;
+  margin-left:-7vw;
   /*  max-height: 40px;*/
 }
 
@@ -166,7 +167,7 @@ h6 {
   .headlogo{
   max-width: 70px; 
   max-height:70px;
-  margin-left:-80px;
+  margin-left:-7vw;
   margin-top: 5px;
   }
 }
@@ -258,6 +259,16 @@ h6 {
   max-width: none;
   background-color: #fafafa;
   height: 100vh;
+}
+
+.linegrey{
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #fafafa;
+  height: 0.5vh;
 }
 
 /* Side Menu */
@@ -545,6 +556,7 @@ li:before {
     grid-gap: 10px;
     grid-auto-rows: minmax(60px, auto);
     grid-auto-flow: dense;
+    padding: 0.5rem;
 }
 
 .grid-layout-clear {
@@ -710,6 +722,7 @@ li:before {
   transform-origin: left top 0;
   margin-left: -6vw;
   margin-top: 70vh;
+  letter-spacing: 3px;
 }
 
 .rownav{
