@@ -42,7 +42,7 @@
           <br>
           <br>
           <br>
-          <h1 style= "color:#b3b3b3"class="mb-1">InMotion</h1>
+          <h1 id="inmotion" style= "color:#b3b3b3; display:none;"class="mb-1">InMotion</h1>
           <h1 class="mb-1">For Your Next:</h1>
           <h1
              class="txt-rotate"
@@ -192,7 +192,6 @@
         <i class="fa fa-instagram fa-2x" style="max-height:5vh; color:#948d8d; margin-right:1vw;"></i>
         <i class="fa fa-linkedin-square fa-2x" style="max-height:5vh; color:#948d8d;"></i>
       </div>
-
     </footer>
 
     <!-- Ghost buttons-->
@@ -256,6 +255,17 @@
             setInterval(change, 10000);
     </script>
     <script>
+      $(document).ready(function(){
+        setTimeout(function(){
+          $("#inmotion").fadeIn(3000);
+        },30600);
+          
+        // $(".btn2").click(function(){
+        //   $("p").fadeIn(1000);
+        // });
+      });
+    </script>
+    <script>
 
       var $window = $(window);
       var $elem = $(".agent-4")
@@ -290,8 +300,6 @@
               $elem2.addClass("trig")
           }
       });
-
-
     </script>
 
   </body>

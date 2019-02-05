@@ -735,8 +735,8 @@ li:before {
   transform: rotate(270deg);
   transform-origin: left top 0;
   margin-left: -6vw;
-  margin-top: 70vh;
-  letter-spacing: 3px;
+  margin-top: 80vh;
+  letter-spacing: 5px;
 }
 
 .rownav{
