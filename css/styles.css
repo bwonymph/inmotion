@@ -360,8 +360,8 @@ h6 {
   height: 50px;
   text-align: center;
   color: #fff;
-  background: rgba(52, 58, 64, 0.5);
-  line-height: 50px;
+/*  background: rgba(52, 58, 64, 0.5);
+*/  line-height: 50px;
   z-index: 999;
 }
 

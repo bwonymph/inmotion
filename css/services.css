@@ -15,15 +15,15 @@
 	color: blue;
 }
 .servimg{
-	max-width: 60vw;
+	max-width: 55vw;
 }
 
 .servimg2{
-	max-width: 60vw;
+	max-width: 55vw;
 }
 
 .servtitle{
-	font-size: 10vh;
+	font-size: 9vh;
 	
 }
 
@@ -51,7 +51,7 @@
 /*	padding-right: 2vw;
 */	}
 	.servtitle{
-	font-size: 10vh;
+	font-size: 9vh;
 	margin-top: -5vh;
 	}	
 }
